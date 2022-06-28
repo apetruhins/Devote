@@ -16,6 +16,8 @@
 		FA4AC506286A4EE200ECB551 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA4AC503286A4EE200ECB551 /* sound-rise.mp3 */; };
 		FA4AC507286A4EE200ECB551 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA4AC504286A4EE200ECB551 /* sound-ding.mp3 */; };
 		FA4AC508286A4EE200ECB551 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA4AC505286A4EE200ECB551 /* sound-tap.mp3 */; };
+		FAE470B3286B6EC300B5D964 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE470B2286B6EC300B5D964 /* Constant.swift */; };
+		FAE470B5286B743400B5D964 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE470B4286B743400B5D964 /* HideKeyboardExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FA4AC503286A4EE200ECB551 /* sound-rise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-rise.mp3"; path = "../sound-rise.mp3"; sourceTree = "<group>"; };
 		FA4AC504286A4EE200ECB551 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-ding.mp3"; path = "../sound-ding.mp3"; sourceTree = "<group>"; };
 		FA4AC505286A4EE200ECB551 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "sound-tap.mp3"; path = "../sound-tap.mp3"; sourceTree = "<group>"; };
+		FAE470B2286B6EC300B5D964 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FAE470B4286B743400B5D964 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,7 @@
 		FA05E7F8286A4FE700737DE4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FAE470B4286B743400B5D964 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -53,6 +58,7 @@
 		FA05E7F9286A4FF000737DE4 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				FAE470B2286B6EC300B5D964 /* Constant.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -207,6 +213,8 @@
 			files = (
 				FA4AC4FA286A4DC100ECB551 /* Persistence.swift in Sources */,
 				FA4AC4F3286A4DBD00ECB551 /* ContentView.swift in Sources */,
+				FAE470B5286B743400B5D964 /* HideKeyboardExtension.swift in Sources */,
+				FAE470B3286B6EC300B5D964 /* Constant.swift in Sources */,
 				FA4AC4FD286A4DC100ECB551 /* Devote.xcdatamodeld in Sources */,
 				FA4AC4F1286A4DBD00ECB551 /* DevoteApp.swift in Sources */,
 			);
