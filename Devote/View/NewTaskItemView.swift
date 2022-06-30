@@ -11,6 +11,8 @@ struct NewTaskItemView: View {
     
     // MARK: - Properties
     
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+    
     @Environment(\.managedObjectContext) private var viewContext
     
     @State private var task: String = ""
@@ -56,9 +58,9 @@ struct NewTaskItemView: View {
                     .font(.system(size: 24, weight: .bold, design: .rounded))
                     .padding()
                     .background(
-                        Color(UIColor.systemGray6)
+                        Color(isDarkMode ? UIColor.tertiarySystemBackground : .secondarySystemBackground)
                     )
-                    .cornerRadius(3)
+                    .cornerRadius(10)
                 
                 Button {
                     addItem()
@@ -79,7 +81,9 @@ struct NewTaskItemView: View {
             } //: VStack
             .padding(.horizontal)
             .padding(.vertical, 20)
-            .background(Color.white)
+            .background(
+                Color(isDarkMode ? .secondarySystemBackground : .white)
+            )
             .cornerRadius(16)
             .shadow(color: .black.opacity(0.65), radius: 24)
             .frame(maxWidth: 640)
